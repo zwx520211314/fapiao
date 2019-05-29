@@ -8,7 +8,13 @@ from baidu_ai import get_commodity_data
 from question_dict import question_dict
 from wxpy import *
 import time
-
+ # 3.2 发送问询信息
+        question_keys_list = info_list[1]  # 问题关键字列表
+        for key in question_keys_list:
+            send_group_message(bot, group_name, '{}：{}'.format(key, question_dict[key]))  # 发送字典中的预置信息 # 3.2 发送问询信息
+        question_keys_list = info_list[1]  # 问题关键字列表
+        for key in question_keys_list:
+            send_group_message(bot, group_name, '{}：{}'.format(key, question_dict[key]))  # 发送字典中的预置信息
 
 correct_info = {
     '购方名称': '甘肃省水利水电勘测设计研究院',
