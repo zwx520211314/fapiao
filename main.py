@@ -83,3 +83,4 @@ while True:
         for key in question_keys_list:
             send_group_message(bot, group_name, '{}：{}'.format(key, question_dict[key]))  # 发送字典中的预置信息
             send_group_message(bot, group_name, '{}：{}'.format(key, question_dict[key]))  # 发送字典中的预置信息
+            print('****************request from yellowlmf**********************')
