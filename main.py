@@ -78,5 +78,8 @@ while True:
                     send_group_message(bot, group_name, commodity_info)  # 发送识别后的数据到群聊
         # 3.2 发送问询信息
         question_keys_list = info_list[1]  # 问题关键字列表
+        for key in question_keys_list: # 3.2 发送问询信息
+        question_keys_list = info_list[1]  # 问题关键字列表
         for key in question_keys_list:
+            send_group_message(bot, group_name, '{}：{}'.format(key, question_dict[key]))  # 发送字典中的预置信息
             send_group_message(bot, group_name, '{}：{}'.format(key, question_dict[key]))  # 发送字典中的预置信息
