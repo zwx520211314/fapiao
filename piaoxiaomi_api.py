@@ -10,9 +10,17 @@ import traceback
 import base64
 import os
 import csv
+
 """
 模块功能：传入发票图片，返回识别后的发票数据
 """
+
+from bot_wechat_invoice import invoice_bot
+from bot_wechat_invoice import send_group_message
+from baidu_ai import get_commodity_data
+from question_dict import question_dict
+
+
 
 def get_file_content(file_path):
     """
