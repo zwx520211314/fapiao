@@ -12,6 +12,9 @@ import os
 import csv
 
 
+"""
+模块功能：传入发票图片，返回识别后的发票数据
+"""
 def get_file_content(file_path):
     """
     以二进制格式打开图片
