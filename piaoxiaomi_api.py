@@ -10,7 +10,9 @@ import traceback
 import base64
 import os
 import csv
-
+"""
+模块功能：传入发票图片，返回识别后的发票数据
+"""
 
 def get_file_content(file_path):
     """
@@ -93,7 +95,8 @@ def get_invoice_data(file_path):
 # invoice_data = get_invoice_data(pic_path)
 # # 从返回的数据中提取想要的数据并添加到二维列表
 # print(invoice_data.values())
-
+# # 从返回的数据中提取想要的数据并添加到二维列表
+# print(invoice_data.values())
 
 
 
